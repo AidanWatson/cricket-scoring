@@ -26,11 +26,12 @@
     assert.equal(getScore(), 7);
     assert.equal(getScorecard(), '16');
   });
-  QUnit.test("deleting dot first ISBAD",function(assert)){
+
+  QUnit.test("deleting dot first ISBAD",function(assert){
 enter('.');
 assert.equal(getScore(),0);
 backspace();
-//assert.equal(getScore(),0);
+assert.equal(getScore(),0);
 
 
   });
